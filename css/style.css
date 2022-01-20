@@ -1,0 +1,64 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-redes-sociais{
+    list-style: none;
+    margin-top: 0px;
+}
+
+.bg-amarelo-laranja{
+    background-color: #f5c62f;
+}
+
+.text-titulo{
+    font-weight: bold;
+}
+
+.item-redes-sociais a{
+    color: white;
+}
+
+.item-redes-sociais a .mdi-instagram:hover{
+    color: #CE1D50;
+}
+.item-redes-sociais a .mdi-linkedin:hover{
+    color: #0A66C2;
+}
+.item-redes-sociais a .mdi-github-circle:hover{
+    color: black;
+}
+.item-redes-sociais a .mdi-behance:hover{
+    color: #003ECB;
+}
+
+.item-redes-sociais{
+    padding-right: 15px;
+}
+
+.modal-title{
+    font-weight: bold;
+}
+
+
+.submit-lente {
+  position:absolute;
+  top:0; right:0;
+  z-index:10;
+  border:none;
+  background:transparent;
+  outline:none;
+}
+
+.submit-line {
+  position: relative;
+
+}
+
+.mdi-content-copy:hover{
+    color: grey ;
+}
+
+.bg-amarelo-escuro{
+    background-color: #c1b016;
+}
