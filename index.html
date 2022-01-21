@@ -43,7 +43,7 @@
         </section>
         <section class="mensagem container mt-5 mb-5">
             <div class="col-12">
-                <form action="" onload="return false">
+                <form action="" onsubmit="return false">
                     <div class="submit-line">
 
                         <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite seu texto aqui" class="form-control"></textarea>
@@ -52,8 +52,8 @@
                         </button>
                     </div>
                     <div class="btns mt-4">
-                        <button class="btn btn-success cripto" value="cripto">Criptografar</button>
-                        <button class="btn btn-danger descripto" value="descripto">Descriptografar</button>
+                        <button class="btn btn-success cripto" id="cripto" value="cripto">Criptografar</button>
+                        <button class="btn btn-danger descripto" id="descripto" value="descripto">Descriptografar</button>
                     </div>
                 </form>
             </div>
@@ -62,7 +62,7 @@
 
 
     <footer>
-        <div class="row container-fluid bg-amarelo-escuro text-white">
+        <div class="row container-fluid bg-amarelo-escuro text-white m-0">
             <div class="col-12 p-2">
                 <p class="text-center mb-0 mt-3">&copy; 2022 Todos os direitos reservados - Vinícius Souza</p>
                 <div class="redes-sociais text-center">
