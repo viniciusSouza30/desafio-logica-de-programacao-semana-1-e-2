@@ -47,15 +47,24 @@
                     <div class="submit-line">
 
                         <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite seu texto aqui" class="form-control"></textarea>
-                        <button class="submit-lente" type="submit">
-                            <span class="mdi mdi-content-copy mdi-24px"></span>
-                        </button>
                     </div>
                     <div class="btns mt-4">
                         <button class="btn btn-success cripto" id="cripto" value="cripto">Criptografar</button>
                         <button class="btn btn-danger descripto" id="descripto" value="descripto">Descriptografar</button>
                     </div>
                 </form>
+            </div>
+        </section>
+        
+        <section class="resultado container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 resultado-mensagem d-flex flex-row align-items-end" id="resultado-mensagem">
+                    <p id="result"></p>
+                    <button class="submit-lente" id="btn-copiar">
+                        <span class="mdi mdi-content-copy mdi-24px"></span>
+                    </button>
+
+                </div>
             </div>
         </section>
     </main>
