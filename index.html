@@ -14,64 +14,65 @@
 <body>
     
     <header>
-        <nav class="bg-amarelo-laranja text-center text-white p-5">
-            <h1 class="text-titulo">Criptografando & Descriptografando</h1>
+        <nav class="ml-3 text-white p-5">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex justify-content-md-start justify-content-center">
+                    <img src="img/Logo.svg" alt="" width="200px">
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-md-end mt-4 mt-md-0 justify-content-center">
+                    <img src="img/logo-svg.svg" alt="" width="250px">
+                </div>
+            </div>
         </nav>
     </header>
 
 
 </form>
     <main>
-        <section class="sobre mt-5">
-            <div class="modal fade" id="modal-sobre-o-programa" tabindex="-1" aria-labelledby="modal-sobre-o-programaLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal-sobre-o-programaLabel">Sobre o programa</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Neste programa você poderá criptografar qualquer texto que você queira, basta você digitar o que deseja e clicar no botão de criptografar.</p>
-                        <p>Pensou que era só isso, não é não. Aqui você também pode descripotografar mensagens que foram recebidas com nossa criptografia, basta colar sua mensagem aqui e clicar no botão de descriptografar.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="mensagem container mt-5 mb-5">
-            <div class="col-12">
-                <form action="" onsubmit="return false">
-                    <div class="submit-line">
+        <section class="mensagem container mb-5">
+            <div class="row">
 
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite seu texto aqui" class="form-control"></textarea>
+                <div class="col-md-8">
+                    <form action="" onsubmit="return false">
+                        <textarea name="mensagem" id="mensagem" placeholder="Digite seu texto aqui" class="form-control bg-transparent border-0"></textarea>
+                        <div class="btns mt-4">
+                            <div class="row">
+                                <div class="col-12 d-flex align-items-start">
+                                    <img src="img/Vector.svg" alt="" width="18px">
+                                    <p>Apenas letras minúsculas e sem acentos</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn btn-lg text-white cripto" id="cripto" value="cripto">Criptografar</button>
+                                </div>
+                                <div class="col-md-6 mt-5 mt-md-0">
+
+                                    <button class="btn btn-lg descripto" id="descripto" value="descripto">Descriptografar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 bg-white container-resultado text-center d-flex flex-column justify-content-center align-items-center mt-5 mt-md-0">
+                    <img src="img/High quality products 1 1.svg" id="img-resultado" alt="" width="200px" class="">
+                    <div id="texto-sem-resultado">
+
+                        <h4 class="bold mt-5">Nenhuma mensagem encontrada</h4>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
                     </div>
-                    <div class="btns mt-4">
-                        <button class="btn btn-success cripto" id="cripto" value="cripto">Criptografar</button>
-                        <button class="btn btn-danger descripto" id="descripto" value="descripto">Descriptografar</button>
-                    </div>
-                </form>
+                    <p id="result"></p>
+                    <button class="submit-lente d-flex flex-row justify-content-center align-items-center" id="btn-copiar" disabled>
+                        Copiar <span class="mdi mdi-content-copy mdi-24px"></span>
+                    </button>
+                </div>
             </div>
         </section>
         
-        <section class="resultado container mt-5 mb-5">
-            <div class="row">
-                <div class="col-12 resultado-mensagem d-flex flex-row align-items-end" id="resultado-mensagem">
-                    <p id="result"></p>
-                    <button class="submit-lente" id="btn-copiar">
-                        <span class="mdi mdi-content-copy mdi-24px"></span>
-                    </button>
 
-                </div>
-            </div>
-        </section>
     </main>
 
 
     <footer>
-        <div class="row container-fluid bg-amarelo-escuro text-white m-0">
+        <div class="row container-fluid bg-amarelo-escuro text-azul m-0">
             <div class="col-12 p-2">
                 <p class="text-center mb-0 mt-3">&copy; 2022 Todos os direitos reservados - Vinícius Souza</p>
                 <div class="redes-sociais text-center">

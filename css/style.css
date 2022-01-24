@@ -2,6 +2,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: #F3F5FC;
+}
+
 .list-redes-sociais{
     list-style: none;
     margin-top: 0px;
@@ -15,8 +19,12 @@
     font-weight: bold;
 }
 
+.text-azul{
+    color: #0A3871;
+}
+
 .item-redes-sociais a{
-    color: white;
+    color: #0A3871;
 }
 
 .item-redes-sociais a .mdi-instagram:hover{
@@ -55,10 +63,56 @@
 
 }
 
-.mdi-content-copy:hover{
-    color: grey ;
+#btn-copiar{
+    width: 60%;
+    background-color: white;
+    border: 1px solid #0A3871;
+    padding: 8px;
+    border-radius: 14px;
+    color: #0A3871;
+    font-weight: 600;
+}
+
+#btn-copiar:hover{
+    color: white ;
+    background-color: #0A3871;
+}
+
+#btn-copiar:disabled{
+    background-color: #cdcdcd42;
+    border: none;
+    color: #cdcdcd42;
 }
 
 .bg-amarelo-escuro{
-    background-color: #c1b016;
+    background-color: #D8DFE8;
 }
+
+#mensagem{
+    height: 60vh;
+}
+
+.container-resultado{
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #000000 8%;
+    min-height: 70vh;
+}
+
+.cripto{
+    background-color: #0A3871;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.descripto{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.bold{
+    font-weight: bold;
+}   

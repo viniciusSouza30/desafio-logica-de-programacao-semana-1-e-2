@@ -1,7 +1,3 @@
-// $(window).on("load", function () {
-//   $("#modal-sobre-o-programa").modal("show");
-// });
-
 function criptografar() {}
 
 document.getElementById("cripto").addEventListener("click", function cripto() {
@@ -22,8 +18,25 @@ document.getElementById("cripto").addEventListener("click", function cripto() {
     }
   }
 
-  
-  let result = document.getElementById("result").innerHTML = mensagemAuxiliar.join('');
+  let imgResultado = document.getElementById("img-resultado")
+  let textoSemResultado = document.getElementById("texto-sem-resultado");
+  if (mensagem !== '') {
+    if (imgResultado == undefined && textoSemResultado == undefined) {
+      let btnCopy = document.getElementById("btn-copiar");
+      btnCopy.disabled = false;
+      let result = (document.getElementById("result").innerHTML =
+        mensagemAuxiliar.join(""));
+    } else {
+      document.getElementById("img-resultado").remove();
+      document.getElementById("texto-sem-resultado").remove();
+      let btnCopy = document.getElementById("btn-copiar");
+      btnCopy.disabled = false;
+      let result = document.getElementById("result").innerHTML = mensagemAuxiliar.join('');
+    }
+    
+  } else {
+    alert("Digite um texto que você deseja criptografar ou descriptografar");
+  }
 
 
   // alert(mensagemAuxiliar.join(""));
@@ -76,7 +89,26 @@ document.getElementById("descripto").addEventListener("click", function () {
         }
       }
     }
-    let result = (document.getElementById("result").innerHTML = mensagemAuxiliar.join(""));
+
+      let imgResultado = document.getElementById("img-resultado")
+  let textoSemResultado = document.getElementById("texto-sem-resultado");
+  if (mensagem !== '') {
+    if (imgResultado == undefined && textoSemResultado == undefined) {
+      let btnCopy = document.getElementById("btn-copiar");
+      btnCopy.disabled = false;
+      let result = (document.getElementById("result").innerHTML =
+        mensagemAuxiliar.join(""));
+    } else {
+      document.getElementById("img-resultado").remove();
+      document.getElementById("texto-sem-resultado").remove();
+      let btnCopy = document.getElementById("btn-copiar");
+      btnCopy.disabled = false;
+      let result = (document.getElementById("result").innerHTML = mensagemAuxiliar.join(""));
+    }
+    
+  } else {
+    alert("Digite um texto que você deseja criptografar ou descriptografar");
+  }
   } else {
     alert("Não contém criptografia no seu texto");
     return;
